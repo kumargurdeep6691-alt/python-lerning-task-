@@ -1,7 +1,7 @@
 services:
   api:
     build: .
-    container_name: task-api-dev
+    container_name:  task-api-maindo
     ports:
-      - "8002:8000"
+      - "8003:8000"
     restart: unless-stopped

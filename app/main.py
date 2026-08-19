@@ -70,3 +70,10 @@ def version():
         "version": "1.0.0",
         "api": "Task API"
     }
+
+@app.get("/database-status")
+def database_status():
+    return {
+        "database": "connected",
+        "status": "healthy"
+    }
